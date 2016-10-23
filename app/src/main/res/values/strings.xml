@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">What\'s tonight</string>
+    <string name="facebook_app_id">1059351027519853</string>
+    <string name="title_activity_events">EventsActivity</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_log_out">Log out</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

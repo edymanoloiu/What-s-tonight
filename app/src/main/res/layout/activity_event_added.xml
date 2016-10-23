@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.soft.edi.whatstonight.EventAddedActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/eventNameTB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/eventNameLabel1"
+            android:lines="1" />
+
+        <TextView
+            android:id="@+id/eventDescriptionLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/eventNameTB"
+            android:text="Event description:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/eventDescriptionTB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/eventDescriptionLabel1"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:linksClickable="true" />
+
+        <TextView
+            android:id="@+id/dateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/eventDescriptionTB"
+            android:paddingTop="10dp"
+            android:text="Date*:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/timeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/dateLabel"
+            android:paddingTop="15dp"
+            android:text="Time*:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/timeTB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/timeLabel"
+            android:layout_alignEnd="@+id/eventDescriptionTB"
+            android:layout_below="@+id/dateTB"
+            android:layout_toEndOf="@+id/timeLabel"
+            android:ems="10"
+            android:inputType="time" />
+
+        <TextView
+            android:id="@+id/cityLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/timeLabel"
+            android:layout_marginTop="20dp"
+            android:text="City*:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/maxLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/detailedLocationTB"
+            android:layout_marginTop="20dp"
+            android:text="Maximum no of participants*:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/detailedLocationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/currentCityBut"
+            android:text="Detailed location*:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/detailedLocationTB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/maxTB"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/detailedLocationLabel"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:lines="1" />
+
+        <TextView
+            android:id="@+id/eventNameLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Event name*:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/categoryLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/maxLabel"
+            android:layout_marginTop="10dp"
+            android:text="Category:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/addEventBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/categoryLabel"
+            android:layout_marginTop="10dp"
+            android:text="Add event"
+            style="@style/com_facebook_button" />
+
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/addEventBut"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/eventNameLabel1"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+            android:id="@+id/dateTB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/eventDescriptionTB"
+            android:layout_toEndOf="@+id/timeLabel"
+            android:ems="10"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/maxTB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/categorySpinner"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/detailedLocationTB"
+            android:layout_toEndOf="@+id/maxLabel"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/currentCityBut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/cityLabel"
+            android:text="Set my current city"
+            style="@style/com_facebook_button" />
+
+        <Spinner
+            android:id="@+id/citySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/currentCityBut"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/timeLabel" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_filter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.soft.edi.whatstonight.FilterActivity">
+
+    <TextView
+        android:id="@+id/filter_city_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="City:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Spinner
+        android:id="@+id/filter_cities_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/filter_city_label"
+        android:layout_toEndOf="@+id/filter_city_label" />
+
+    <TextView
+        android:id="@+id/filter_cat_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/filter_city_label"
+        android:layout_marginTop="20dp"
+        android:text="Category:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/filter_apply_button"
+        style="@style/com_facebook_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:text="Apply filter"
+        android:textColorLink="?attr/actionModeSplitBackground"
+        android:background="@drawable/com_facebook_button_background" />
+
+    <Spinner
+        android:id="@+id/filter_cat_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/filter_cat_label"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/filter_cat_label" />
+
+    <TextView
+        android:text="Event owner:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filter_cat_label"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:id="@+id/filter_evOwner_label"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/filter_owner_tb"
+        android:layout_alignBaseline="@+id/filter_evOwner_label"
+        android:layout_alignBottom="@+id/filter_evOwner_label"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/filter_evOwner_label" />
+</RelativeLayout>
